@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styles.css')}}" ></link>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&display=swap" rel="stylesheet">
+    <body>
 
 
     <header  class="jumbotron text-centre d-flex justify-content-center">
@@ -37,5 +38,6 @@
             {% block content %}{% endblock %}
         </main>
     </main>
+    </body>
     <script type="text/javaScript" src="{{ url_for('static',filename='js/todo.js') }}"></script>
 </html>

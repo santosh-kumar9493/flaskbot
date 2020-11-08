@@ -28,6 +28,7 @@ $(function() {
                         voice($(response).text());
                     });
                 });
+                $("html, body").animate({ scrollTop: $(document).height() },1500);
                 
                 
             }
@@ -47,8 +48,9 @@ $(function() {
                     $(response).ready(function(){
                         voice($(response).text())
                     });
-                    $("#userin").stop().animate({ scrollTop: $("#userin")[0].scrollHeight}, 1000);
+                    
                 })
+                $("html, body").animate({ scrollTop: $(document).height() },1500);
             }
             
         }
