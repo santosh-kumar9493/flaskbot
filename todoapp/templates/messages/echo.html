@@ -1,0 +1,20 @@
+{% extends 'messages/botbase.html' %}
+
+{% block content %}
+    {% if question['message']=='' %}
+        <p>Input can't be empty please try again</p>
+    {% elif question['message'].lower()=='hello' %}
+        <p>Hello </p>
+    {% elif question['message'].lower()=='hi' or question['message'].lower()=='hii' %}
+        <p>Hii!</p>
+    {% elif  question['message'].lower()=='thank you' or question['message'].lower()=='thanks' %}
+        <p>Thank you :)</p>
+    {% else %}
+        <P>Couldn't get you please try again</P>
+    {% endif %}
+
+{% endblock %} 
+
+
+
+

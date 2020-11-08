@@ -1,0 +1,12 @@
+{% extends 'messages/userbase.html' %}
+
+{% block content %}
+
+<div class="d-flex align-items-center form" >
+    <span class="label ">{{question.key}}</span>
+    <input id="userin" type="text" placeholder="Type msg.." class="form-control">
+    <button class="btn" id="sendbtn" placeholder="Type message" onclick="send_resp('{{question.key}}')"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+    <button class="btn" id="voicebtn"  onclick="voice_resp('{{question.key}}')"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+</div>
+
+{% endblock %}
