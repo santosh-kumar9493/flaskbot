@@ -14,11 +14,13 @@ def getIntent(info):
     if info['key']=='name':
         Name=info["message"]
         return "next"
-    elif any(x in msg for x in ["place","order"]):
+    elif info['key']=='Payment type:':
         zigzag+=1
+        return "ordermsg"
+    elif any(x in msg for x in ["place","order","buy"]):
         if(not checkList(msg)):
             return "notorderd"
-        return "ordermsg"
+        return "paymthds"
     elif "mens" in msg:
         return "mens"
     elif "furniture" in msg:
@@ -29,8 +31,6 @@ def getIntent(info):
         return "bye"
     elif any(x in msg for x in ["available","cash on","on delivery"]):
         return "cod"
-    elif any( x in msg for x in ["payment methods","available methods","for payment"]):
-        return "paymthds"
     else:
         return "echo"
 
@@ -46,18 +46,18 @@ def handle(data):
         return render_template('messages/furnitures.html',question={'key':'','text':"Shop furniture for home"})
     elif getIntent(data)=="kids":
         return render_template('messages/kidswear.html',question={'key':'','text':"Enjoy shopping kids wear"})
-    elif getIntent(data)=="ordermsg":
-        return render_template("messages/replyfororder.html",question={'key':'','text':"place order"},Zigzag=zigzag,name=Name)
+    elif getIntent(data)=="paymthds":
+        return render_template("messages/replyfororder.html",question={'key':'Payment type:','text':"Select payment method"},Zigzag=zigzag,name=Name)
     elif getIntent(data)=="notordered":
         return render_template("messages/notfoud.html",question={'key':'','text':"product not found"})
     elif getIntent(data)=="getmyorders":
         return render_template("messages/getorders.html",question={'key':'','text':"getting products"})
     elif getIntent(data)=="cod":
         return render_template("messages/codmain.html",question={'key':'','text':"getting products"},name=Name)
-    elif getIntent(data)=="paymthds":
-        return render_template("messages/paymain.html",question={'key':'','text':"getting products"})
     elif getIntent(data)=="bye":
         return render_template("messages/bye.html",name=Name)
+    elif getIntent(data)=="ordermsg":
+        return render_template("messages/paymain.html",name=Name,question={'key':'','text':'selecting payment type'},Zigzag=zigzag)
     else:
         return render_template('messages/nreq.html',question=data)
 

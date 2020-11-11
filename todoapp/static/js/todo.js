@@ -58,4 +58,5 @@ $(function() {
             msg.text=info;
             speechSynthesis.speak(msg)
         }
+        
 });

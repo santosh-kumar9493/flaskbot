@@ -5,6 +5,5 @@ bot={
         {"key":"1","description":"Kids wear"},
         {"key":"2","description":"Mens wear"},
         {"key":"3","description":"Furniture"},
-    ],
-    "shop":"Take you to shopping website"
+    ]
 }

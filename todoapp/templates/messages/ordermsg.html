@@ -1,0 +1,10 @@
+{% extends 'messages/botbase.html' %}
+
+{% block content %}
+    {% if Zigzag%2==0 %}
+        <p>Good selection {{name}} thanks for ordering</p>
+    {% else %}
+        <p>Thanks for ordering</p>
+    {% endif %}
+{% endblock %}
+
