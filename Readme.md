@@ -1,4 +1,4 @@
-# botOnWeb
+# flaskBot
 ***This is a chat bot on webpage***
 # Team name :
  ***Turquoise Halayudha***
