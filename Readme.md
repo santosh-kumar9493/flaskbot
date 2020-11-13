@@ -24,8 +24,8 @@
 
 
 # What we have learnt?
-****1.Firstly its fortunate for us to be part of this course.We were also very excited.Through this course we got some industrial type of experiance by doing work in groups.As a team we shared our ideas and we contributed equally in doing the weekly assignments.
-2.In first week we did  console based chatbot which is cool, in that week we learnt how to use libraries that are present online and we got to know to read the documentation of the code and we are able to use it.
-3.In second week we made bot on webpage using HTML,CSS,JAVA SCRIPT ,It was very challanging  for us making a chatbot on webpage, as it was first time for us.We made our bot with the help of resources that are available in this machine learning course
-4.Most importantly we are enthusiastic so far to learn new things.
-5.In third week we deployed flask in heroku we used flask in making our bot.This week we got to know about flask templates,ajax,jquery library****
+****1.Firstly its fortunate for us to be part of this course.We were also very excited.Through this course we got some industrial type of experiance by doing work in groups.As a team we shared our ideas and we contributed equally in doing the weekly assignments.</br>
+2.In first week we did  console based chatbot which is cool, in that week we learnt how to use libraries that are present online and we got to know to read the documentation of the code and we are able to use it.</br>
+3.In second week we made bot on webpage using HTML,CSS,JAVA SCRIPT ,It was very challanging  for us making a chatbot on webpage, as it was first time for us.We made our bot with the help of resources that are available in this machine learning course.</br>
+4.Most importantly we are enthusiastic so far to learn new things.</br>
+5.In third week we deployed flask in heroku we used flask in making our bot.This week we got to know about flask templates,ajax,jquery library</br>****
